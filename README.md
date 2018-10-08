@@ -5,3 +5,5 @@ This package calculates the interval estimates for the parameters of linear mode
 
 
 **A package manual may be found at**: https://cran.r-project.org/web/packages/hcci/hcci.pdf. The versions of the AdequacyModel package are separated by tags.
+
+**CRAN Project**: https://CRAN.R-project.org/package=hcci.
