@@ -3,6 +3,9 @@
 
 This package calculates the interval estimates for the parameters of linear models heteroscedastic regression using bootstrap - (Wild Bootstrap) and double bootstrap-*t* (Wild Bootstrap). It is also possible to calculate confidence intervals using the percentile bootstrap and percentile bootstrap double. It is possible to calculate consistent estimates of the covariance matrix of the parameters of linear regression models with heteroskedasticity of unknown form. The package also provides function to calculate consistently the covariance matrix of the parameters of linear models with heteroskedasticity of unknown form.
 
+<p align="center">
+  <img width="460" height="300" src="https://raw.githubusercontent.com/PedroRafaelDinizMarinho/tempfiles/master/boots.png">
+</p>
 
 **A package manual may be found at**: https://cran.r-project.org/web/packages/hcci/hcci.pdf. The versions of the AdequacyModel package are separated by tags.
 
