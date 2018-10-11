@@ -1,5 +1,9 @@
 # hcci: Interval estimation for the parameters of linear models with heteroskedasticity (Wild Bootstrap)
 
+[![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/hcci)](https://CRAN.R-project.org/package=hcci)
+[![total](http://cranlogs.r-pkg.org/badges/grand-total/hcci)](http://cranlogs.r-pkg.org/)
+
+
 
 This package calculates the interval estimates for the parameters of linear models heteroscedastic regression using bootstrap - (Wild Bootstrap) and double bootstrap-*t* (Wild Bootstrap). It is also possible to calculate confidence intervals using the percentile bootstrap and percentile bootstrap double. It is possible to calculate consistent estimates of the covariance matrix of the parameters of linear regression models with heteroskedasticity of unknown form. The package also provides function to calculate consistently the covariance matrix of the parameters of linear models with heteroskedasticity of unknown form.
 
