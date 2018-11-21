@@ -15,7 +15,7 @@ This package calculates the interval estimates for the parameters of linear mode
 
 ### Installation
 
-`install.packages("iRegression")` <br><br><br>
+`install.packages("hcci")` <br><br><br>
 
 **A package manual may be found at**: https://cran.r-project.org/web/packages/hcci/hcci.pdf. The versions of the **hcci** package are separated by tags.
 
