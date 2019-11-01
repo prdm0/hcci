@@ -1,5 +1,7 @@
 # hcci: Interval estimation for the parameters of linear models with heteroskedasticity (Wild Bootstrap)
 
+**see package website**: https://prdm0.github.io/hcci/.
+
 [![last](https://www.r-pkg.org/badges/last-release/hcci)](https://CRAN.R-project.org/package=hcci)
 [![CRAN_Status_Badge](https://www.r-pkg.org/badges/version/hcci)](https://CRAN.R-project.org/package=hcci)
 [![total](http://cranlogs.r-pkg.org/badges/grand-total/hcci)](https://CRAN.R-project.org/package=hcci)
