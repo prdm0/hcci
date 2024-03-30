@@ -2,7 +2,7 @@ Tboot <-
 function(model, significance=0.05, hc=4,
                   double=FALSE, J=NULL, K=NULL, distribution="rademacher"){
   
-  if(class(model)!="lm") stop("The argument model must have class lm.")
+  if(!inherits(model, "lm")) stop("The argument model must have class lm.")
   if(significance>=1 || significance<=0){
     stop("The significance level should belong to the open interval (0,1).")
   }
@@ -69,7 +69,7 @@ function(model, significance=0.05, hc=4,
     Xbeta_star = X%*%beta_star
     
     if(double==TRUE){
-      # Aqui começa o bootstrap duplo
+      # Here begins the double bootstrap.
       for(k in 1:K){
         if(distribution=="rademacher"){
           t_star_star = as.vector(sample(c(-1,1),size=length(model$fitted.values),

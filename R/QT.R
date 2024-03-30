@@ -1,5 +1,5 @@
 QT <- function(model, significance = 0.05, hc=4, h0=0){
-  if (class(model) != "lm") 
+  if (!inherits(model, "lm")) 
     stop("The argument model must have class lm.")
   if (significance >= 1 || significance <= 0) {
     stop("The significance level should belong to the open interval (0,1).")
