@@ -1,6 +1,6 @@
 \name{HC}
 \alias{HC}
-%- Also NEED an '\alias' for EACH other topic documented here.
+
 \title{
 Covariance Matrix - (HC0, HC2, HC3, HC4 and HC5)
 }
@@ -10,7 +10,7 @@ This function calculates the covariance structure for heteroskedasticity linear 
 \usage{
 HC(model, method=4, k=0.7)
 }
-%- maybe also 'usage' for other objects documented here.
+
 \arguments{
   \item{model}{
      Any object of class \code{lm};
@@ -23,16 +23,6 @@ HC(model, method=4, k=0.7)
    Constant used by the method HC5. The suggestion of the authors is to use \eqn{k = 0.7}.
 }
 }
-%\details{
-%%  ~~ If necessary, more details than the description above ~~
-%}
-%\value{
-%%  ~Describe the value returned
-%%  If it is a LIST, use
-%%  \item{comp1 }{Description of 'comp1'}
-%%  \item{comp2 }{Description of 'comp2'}
-%% ...
-%}
 \references{
 Cribari-Neto, F. (2004). Asymptotic inference under heteroskedasticity of unknown
 form. Computational Statistics and Data Analysis, 45, 215-233.
@@ -54,26 +44,19 @@ a direct test for heteroskedasticity. Econometrica, 48, 817-838.
 \author{
 Pedro Rafael Diniz Marinho <pedro.rafael.marinho@gmail.com>
 }
-%\note{
-%%  ~~further notes~~
-%}
 
+\value{
+Returns an object of class \code{matrix} with the estimated covariance matrix.
+}
 
 \examples{
 data(schools)
-datas = schools[-50,]
+datas = schools[-50L,]
 y = datas$Expenditure 
 x = datas$Income/10000
 model = lm(y ~ x)
 HC(model, method=4)
 }
 
-%% ~Make other sections like Warning with \section{Warning }{....} ~
-
-%\seealso{
-%
-%}
-% Add one or more standard keywords, see file 'KEYWORDS' in the
-% R documentation directory.
 \keyword{heteroskedasticity}
-\keyword{covariance}% __ONLY ONE__ keyword per line
+\keyword{covariance}

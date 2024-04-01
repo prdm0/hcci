@@ -2,17 +2,16 @@
 \alias{hcci-package}
 \alias{hcci}
 \docType{package}
-\title{Interval estimation for the parameters of linear models with heteroskedasticity of unknown form using bootstrap-t and percentile bootstrap and schemes of the double bootstrap.}
-\description{This package calculates the interval estimates for the parameters of the models linares heteroskedasticity regression using bootstrap-t (Wild Bootstrap) and double bootstrap-t (Wild Bootstrap). It is also possible to calculate confidence intervals using the percentile bootstrap and percentile bootstrap double. It is also possible to calculate consistent estimates of the covariance matrix of the parameters of linear regression models with heteroskedasticity of unknown form. The package also provides function to calculate consistently the covariance matrix of the parameters of linear models with heteroskedasticity of unknown form.}
+\title{Interval Estimation of Linear Models with Heteroskedasticity}
+\description{Calculates the interval estimates for the parameters of linear models with heteroscedastic regression using bootstrap - (Wild Bootstrap) and double bootstrap-t (Wild Bootstrap). It is also possible to calculate confidence intervals using the percentile bootstrap and percentile bootstrap double. The package can calculate consistent estimates of the covariance matrix of the parameters of linear regression models with heteroscedasticity of unknown form. The package also provides a function to consistently calculate the covariance matrix of the parameters of linear models with heteroscedasticity of unknown form. The bootstrap methods exported by the package are based on the master's thesis of the first author, available at https://raw.githubusercontent.com/prdm0/hcci/master/references/dissertacao_mestrado.pdf. The hcci package in previous versions was cited in the book VINOD, Hrishikesh D. Hands-on Intermediate Econometrics Using R: Templates for Learning Quantitative Methods and R Software. 2022, p. 441, ISBN 978-981-125-617-2 (hardcover). The simple bootstrap schemes are based on the works of Cribari-Neto F and Lima M. G. (2009) https://doi.org/10.1080/00949650801935327, while the double bootstrap schemes for the parameters that index the linear models with heteroscedasticity of unknown form are based on the works of Beran (1987) https://doi.org/10.2307/2336685. The use of bootstrap for the calculation of interval estimates in regression models with heteroscedasticity of unknown form from a weighting of the residuals was proposed by Wu (1986) https://dx.doi.org/10.1214/aos/1176350142. This bootstrap scheme is known as weighted or wild bootstrap.}
 \details{
 \tabular{ll}{
 Package: \tab hcci\cr
 Type: \tab Package\cr
-Version: \tab 1.0.0\cr
-Date: \tab 2013-09-18\cr
-License: \tab GPL (>=2)\cr
+Version: \tab 1.1.0\cr
+Date: \tab 2024-03-30\cr
+License: \tab GPL (>=3)\cr
 }
-%~~ An overview of how to use the package, including the most important functions ~~
 }
 \author{
 Maintainer: Pedro Rafael Diniz Marinho <pedro.rafael.marinho@gmail.com>
@@ -42,15 +41,5 @@ White, H. (1980). A heteroskedasticity-consistent covariance matrix estimator an
 a direct test for heteroskedasticity. Econometrica, 48, 817-838.
 
 Wu, C.F.J. (1986). Jackknife, bootstrap and other resampling methods in regression analysis, 14, 1261-1295;
-
 }
-%~~ Optionally other standard keywords, one per line, from file KEYWORDS in the R ~~
-%~~ documentation directory ~~
-\keyword{heteroscedasticity}
-%\seealso{
-%~~ Optional links to other man pages, e.g. ~~
-%~~ \code{\link[<pkg>:<pkg>-package]{<pkg>}} ~~
-%}
-%\examples{
-%~~ simple examples of the most important functions ~~
-%}
+
