@@ -1,4 +1,4 @@
-QT <- function(model, significance = 0.05, hc=4, h0=0){
+QT <- function(model, significance = 0.05, hc=4, h0=0, ...){
   if (!inherits(model, "lm")) 
     stop("The argument model must have class lm.")
   if (significance >= 1 || significance <= 0) {
@@ -10,7 +10,7 @@ QT <- function(model, significance = 0.05, hc=4, h0=0){
   variables = labels(model)
   p = length(variables)
   n = length(model$residuals)
-  statistics =  abs((as.numeric(model$coefficients) - h0)/sqrt(diag(HC(model,method=hc))))
+  statistics =  abs((as.numeric(model$coefficients) - h0)/sqrt(diag(HC(model,method=hc, ...))))
   names(statistics) =  c("Intercept",variables)
   p_value = pnorm(statistics, mean = 0, sd = 1, lower.tail = FALSE, log.p = FALSE)
   result = list("model" = model, "statistics" = statistics, "p_value" = p_value)
